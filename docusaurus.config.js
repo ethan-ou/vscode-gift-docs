@@ -22,12 +22,7 @@ module.exports = {
       },
       links: [
         { to: "docs/introduction", label: "Get Started", position: "left" },
-        { to: "blog", label: "Blog", position: "left" },
-        {
-          href: "https://github.com/facebook/docusaurus",
-          label: "GitHub",
-          position: "right"
-        }
+        { to: "docs/questions", label: "Reference", position: "left" }
       ]
     },
     footer: {
