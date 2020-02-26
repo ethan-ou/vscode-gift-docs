@@ -11,4 +11,4 @@ jobs:
         DESTINATION_REPO: ${{ secrets.DEST_URL }}
         DESTINATION_BRANCH: "*"
       with:
-        args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
+        args: $SOURCE_REPO $DESTINATION_REPO 
