@@ -53,7 +53,7 @@ Watch the following video and summarise the events in your own words.
 <iframe width\="560" height\="315" src\="https\://www.youtube.com/embed/2fqYgNR6174" frameborder\="0" allow\="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> {}
 ```
 
-### Adding Styling and Alt Text to Images (Optional)
+## Adding Styling and Alt Text to Images (Optional)
 
 If you'd like to customise the look of your image, you can do so with basic CSS styling. This can be achieved by adding a `style` tag on your image.
 
@@ -93,7 +93,7 @@ Which of the following is an image of a flower? {
 }
 ```
 
-### Previewing Media
+## Previewing Media
 
 If you're working with media, you may find your media fails to load in the preview window. 
 
