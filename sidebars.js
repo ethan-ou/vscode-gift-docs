@@ -8,6 +8,6 @@
 module.exports = {
   docs: {
     Basics: ["introduction", "installation", "getting-started"],
-    Reference: ["questions", "options", "errors"]
+    Reference: ["questions", "options", "advanced"]
   }
 };
