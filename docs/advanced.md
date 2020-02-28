@@ -5,7 +5,7 @@ title: Advanced
 
 In this section, we'll walkthrough some more advanced features that GIFT has to offer.
 
-### Adding Media (Images & Audio)
+## Adding Media (Images, Audio & Video)
 
 **Note:** For most purposes, we recommend adding media using Moodle's File Picker after uploading your questions to Moodle. The following method is best used for media uploaded to external sources (e.g. Amazon S3, Flickr, Dropbox).
 
@@ -35,7 +35,7 @@ Example link:
 
 A common source of errors is failing to backslash the colon on a `http:` or a `https:` e.g. `https\://www.google.com`.
 
-#### Adding Youtube Videos
+### Adding Youtube Videos
 
 To add a Youtube video:
 
@@ -51,7 +51,7 @@ Watch the following video and summarise the events in your own words.
 <iframe width\="560" height\="315" src\="https\://www.youtube.com/embed/2fqYgNR6174" frameborder\="0" allow\="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> {}
 ```
 
-#### Adding Styling and Alt Text to Images (Optional)
+### Adding Styling and Alt Text to Images (Optional)
 
 If you'd like to customise the look of your image, you can do so with basic CSS styling. This can be achieved by adding a `style` tag on your image.
 
@@ -91,7 +91,7 @@ Which of the following is an image of a flower? {
 }
 ```
 
-#### Previewing Media
+### Previewing Media
 
 If you're working with media, you may find your media fails to load in the preview window. 
 
