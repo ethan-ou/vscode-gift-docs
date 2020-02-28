@@ -17,8 +17,10 @@ That's it! You now have everything you need to write in the GIFT format.
 
 ## Getting Familiar with Visual Studio Code
 
-In Visual Studio Code, create a new file by going to `File > New File`, or by using the keyboard shortcut `CTRL+N`.
+In Visual Studio Code, create a new file by going to `File > New File`, or by using the shortcut `CTRL+N`.
 
 Next, we'll need to set the language of the document to the GIFT format. In the bottom right-hand corner, you'll see a group of buttons. One of these buttons has the name `Plain Text`.
 
 Click on this button, and scroll through the options. You should see an option for `Gift`. Select it, and the GIFT Language will be enabled.
+
+We also recommend toggling Word Wrap for easier visibility of long questions. You can do this by going to `View > Toggle Word Wrap` or by using the shortcut `ALT + Z`.
