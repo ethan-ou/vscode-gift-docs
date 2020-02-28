@@ -27,10 +27,11 @@ Using GIFT with multimedia is a little tricky. The following steps will help gui
 
 Replace `<url>` with your link, and the image should now be linked to your question.
 
-Example link:
-
 ```html
-<img src\="https\://images.unsplash.com/photo-1582738412147-d29ca77b95cc" />
+Which of the following is an image of a flower? {
+    =<img src\="https\://images.unsplash.com/photo-1582738412147-d29ca77b95cc" />
+    ~<img src\="https\://images.unsplash.com/photo-1582833736371-b69dcc852ce2?ixlib" />
+}
 ```
 
 **Note:** Make sure to insert a backslash `\` for colons `:` and equals signs `=`, as well as other GIFT special characters `~ # { }`. 
