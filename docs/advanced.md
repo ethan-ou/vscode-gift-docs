@@ -7,13 +7,15 @@ In this section, we'll walkthrough some more advanced features that GIFT has to 
 
 ## Adding Media (Images, Audio & Video)
 
-**Note:** For most purposes, we recommend adding media using Moodle's File Picker after uploading your questions to Moodle. The following method is best used for media uploaded to external sources (e.g. Amazon S3, Flickr, Dropbox).
+**Note:** For most purposes, we recommend adding media using Moodle's File Picker after uploading questions to Moodle. The following method is best used for media uploaded to external sources (e.g. Amazon S3, Flickr, Dropbox).
 
 Using GIFT with multimedia is a little tricky. The following steps will help guide you through how to display multimedia in your questions.
 
-You'll need to first upload your files on a file server. This is tricky with Moodle, so you'll most likely need to use an external service such as Amazon S3, Flickr or otherwise.
+1. Upload your files to a file server. You'll most likely need to use an external service such as Amazon S3, Flickr or otherwise. If your images are already on the web, skip this step.
 
-Once you have links to each of your files, go to your editor and add the following code:
+2. Copy the links of each image into a spreadsheet or text editor.
+
+3. Once you have links to each of your files, go to your editor and add the following code:
 
 ```html
 <!-- Images -->
