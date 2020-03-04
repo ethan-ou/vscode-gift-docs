@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - 'docs/**'
-      - 'website/**'
 
 jobs:
   deploy:
@@ -18,24 +15,27 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
+        
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: Cache dependencies
         uses: actions/cache@v1
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('website/package-lock.json') }}
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-yarn-
 
       - name: Build
         run: |
-          cd website
-          npm ci
-          npm run build
+          yarn install
+          yarn run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # use the projectName from your siteConfig.js file: https://docusaurus.io/docs/en/site-config#projectname-string
-          publish_dir: ./website/build/vscode-gift-docs
+          publish_dir: ./build
