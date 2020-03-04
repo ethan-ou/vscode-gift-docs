@@ -8,8 +8,8 @@
 module.exports = {
   title: "GIFT Language",
   tagline: "A faster way of writing Moodle questions",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  url: "https://ethan-ou.github.io/",
+  baseUrl: "/vscode-gift-docs/",
   favicon: "img/favicon.ico",
   organizationName: "ethan-ou", // Usually your GitHub org/user name.
   projectName: "vscode-gift-docs", // Usually your repo name.
