@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - 'docs/**'
-      - 'website/**'
 
 jobs:
   deploy:
@@ -23,19 +20,16 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('website/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
 
       - name: Build
-        run: |
-          cd website
-          npm ci
-          npm run build
+        run: npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # use the projectName from your siteConfig.js file: https://docusaurus.io/docs/en/site-config#projectname-string
-          publish_dir: ./website/build/vscode-gift-docs
+          publish_dir: ./build/vscode-gift-docs
