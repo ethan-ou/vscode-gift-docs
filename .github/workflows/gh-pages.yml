@@ -30,6 +30,7 @@ jobs:
 
       - name: Build
         run: |
+          yarn install
           yarn run build
 
       - name: Deploy
