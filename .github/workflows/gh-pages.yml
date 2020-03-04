@@ -33,4 +33,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # use the projectName from your siteConfig.js file: https://docusaurus.io/docs/en/site-config#projectname-string
-          publish_dir: ./build/vscode-gift-docs
+          publish_dir: ./build
