@@ -109,3 +109,25 @@ If you accept the risks, the following steps will allow the preview to load medi
 3. Select `Allow insecure content`.
 
 You should now see content from external sources appear in your preview.
+
+## Adding Mathematical Formulas with TeX
+
+GIFT supports questions with TeX to allow the creation of complex formulas and equations. 
+
+* For inline equations use `\\(` and `\\)` for the start and close of a block.
+* For equation blocks, use `$$` and `$$` for the start and close of a block.
+* Make sure to escape all special characters `~ = # { } :` using a backslash `\` (e.g. `\{`, `\}`). Take special care with curly brackets `{`, `}` since they are also used for GIFT's question syntax.
+
+Example:
+
+```text
+For the following equation, what is the value of \\(x\\) when the value of \\(y \= 2 \\)?
+$$ x\ \=\ \frac\{\sqrt\{144\}\}\{2\}\ \times\ (y\ +\ 12) $$ {
+    =\\(84\\)
+    ~\\(80\\)
+    ~\\(96\\)
+    ~\\(102\\)
+}
+```
+
+For additional information on TeX in Moodle, refer to the Moodle docs on [Using TeX notation](https://docs.moodle.org/23/en/Using_TeX_Notation)
