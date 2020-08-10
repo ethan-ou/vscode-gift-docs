@@ -18,12 +18,12 @@ module.exports = {
       title: "GIFT Language",
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.svg"
+        src: "img/logo.svg",
       },
-      links: [
+      items: [
         { to: "docs/introduction", label: "Get Started", position: "left" },
-        { to: "docs/questions", label: "Reference", position: "left" }
-      ]
+        { to: "docs/questions", label: "Reference", position: "left" },
+      ],
     },
     footer: {
       style: "dark",
@@ -33,18 +33,18 @@ module.exports = {
           items: [
             {
               label: "Docs",
-              to: "docs/motivation"
-            }
-          ]
+              to: "docs/motivation",
+            },
+          ],
         },
         {
           title: "Community",
           items: [
             {
               label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus"
-            }
-          ]
+              href: "https://discordapp.com/invite/docusaurus",
+            },
+          ],
         },
         {
           title: "Social",
@@ -58,22 +58,22 @@ module.exports = {
       ],
       logo: {
         alt: "Facebook Open Source Logo",
-        src: "https://docusaurus.io/img/oss_logo.png"
+        src: "https://docusaurus.io/img/oss_logo.png",
       },
-      copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc. Built with Docusaurus.`
-    }
+      copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc. Built with Docusaurus.`,
+    },
   },
   presets: [
     [
       "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve("./sidebars.js")
+          sidebarPath: require.resolve("./sidebars.js"),
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css")
-        }
-      }
-    ]
-  ]
+          customCss: require.resolve("./src/css/custom.css"),
+        },
+      },
+    ],
+  ],
 };
