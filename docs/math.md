@@ -7,11 +7,22 @@ In this section, we'll cover how to use GIFT for math-heavy subjects.
 
 ## Using LaTeX
 
-GIFT supports questions with :aTeX to allow the creation of complex formulas and equations. 
-
+GIFT supports questions with LaTeX to allow the creation of complex formulas and equations. If you use LaTeX with Moodle, it should work the way you expect it to, with a couple of small differences:
 * For inline equations use `\\(` and `\\)` for the start and close of a block.
 * For equation blocks, use `$$` and `$$` for the start and close of a block.
 * Make sure to escape all special characters `~ = # { } :` using a backslash `\` (e.g. `\{`, `\}`). Take special care with curly brackets `{`, `}` since they are also used for GIFT's question syntax.
+
+Escaping all special characters is **very** important for LaTeX to work in GIFT. The following block will illustrate the difference:
+
+```text
+# Unescaped LaTeX
+$$ x\ =\ \frac{\sqrt{144}}{2}\ \times\ (y\ +\ 12) $$  
+
+# Escaped LaTeX (notice all curly brackets {} and = are escaped)
+$$ x\ \=\ \frac\{\sqrt\{144\}\}\{2\}\ \times\ (y\ +\ 12) $$
+```
+
+For additional information on LaTeX in Moodle, refer to the Moodle docs on [Using TeX notation](https://docs.moodle.org/23/en/Using_TeX_Notation).
 
 Example:
 
@@ -84,4 +95,3 @@ M834 80h400000v40h-400000z" /></svg></span></span></span><span className="vlist-
 </section>
 
 
-For additional information on TeX in Moodle, refer to the Moodle docs on [Using TeX notation](https://docs.moodle.org/23/en/Using_TeX_Notation)
