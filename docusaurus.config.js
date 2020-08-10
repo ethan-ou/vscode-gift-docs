@@ -46,15 +46,6 @@ module.exports = {
             },
           ],
         },
-        {
-          title: "Social",
-          items: [
-            {
-              label: "Blog",
-              to: "blog"
-            }
-          ]
-        }
       ],
       logo: {
         alt: "Facebook Open Source Logo",
