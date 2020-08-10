@@ -21,8 +21,8 @@ module.exports = {
         src: "img/logo.svg",
       },
       items: [
-        { to: "docs/introduction", label: "Get Started", position: "left" },
-        { to: "docs/questions", label: "Reference", position: "left" },
+        { to: "/docs/introduction", label: "Get Started", position: "left" },
+        { to: "/docs/questions", label: "Reference", position: "left" },
       ],
     },
     footer: {
@@ -33,7 +33,7 @@ module.exports = {
           items: [
             {
               label: "Docs",
-              to: "docs/motivation",
+              to: "/docs/introduction",
             },
           ],
         },
