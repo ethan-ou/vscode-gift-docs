@@ -1,7 +1,6 @@
 {
   "name": "vscode-gift-docs",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -10,11 +9,11 @@
     "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.61",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.61",
-    "classnames": "^2.2.6",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "@docusaurus/core": "^2.0.1",
+    "@docusaurus/preset-classic": "^2.0.1",
+    "classnames": "^2.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "browserslist": {
     "production": [
