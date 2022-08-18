@@ -18,7 +18,7 @@ jobs:
         
       - name: Get npm cache
         id: npm-cache
-        run: echo "::set-output name=dir::$(npm cache add dir)"
+        run: echo "::set-output name=dir::$(~/.npm)"
 
       - name: Cache dependencies
         uses: actions/cache@v1
