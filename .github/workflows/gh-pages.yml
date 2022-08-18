@@ -15,18 +15,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16
-        
-      - name: Get npm cache
-        id: npm-cache
-        run: echo "::set-output name=dir::$(~/.npm)"
-
-      - name: Cache dependencies
-        uses: actions/cache@v1
-        with:
-          path: ${{ steps.npm-cache.outputs.dir }}
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/package.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-npm-
 
       - name: Build
         run: |
