@@ -7,23 +7,25 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
+          cache: npm
 
-      - name: Build
-        run: |
-          npm install
-          npm run build
+      - name: Install dependencies
+        run: npm ci
+      - name: Build website
+        run: npm run build
 
-      - name: Deploy
+      # Popular action to deploy to GitHub Pages:
+      # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # use the projectName from your siteConfig.js file: https://docusaurus.io/docs/en/site-config#projectname-string
+          # Build output to publish to the `gh-pages` branch:
           publish_dir: ./build
